@@ -1,3 +1,3 @@
 @echo off
-set /a key=13333+(%TIME:~0,2%*7113)+(%TIME:~3,2%*77)
-movdump.exe -key %key%
+set /a key=13333+((1%TIME:~0,2%-100)*7113)+((1%TIME:~3,2%-100)*77)
+movdump.exe -key %key% %*
